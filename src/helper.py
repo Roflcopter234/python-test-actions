@@ -10,6 +10,7 @@ def matmul(a, b):
     for i in range(len(a)):
         for j in range(len(b[0])):
             for k in range(len(b)):
-                res[i][j] += a[i][k] * b[k][j]
+                #res[i][j] += a[i][k] * b[k][j]
+                res[j][i] += a[i][k] * b[k][j]
     
     return res
