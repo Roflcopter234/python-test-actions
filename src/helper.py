@@ -1,4 +1,4 @@
-import numpy
+import numpy as np
 
 
 def matmul(a, b):
@@ -20,6 +20,6 @@ def matmul2(a, b):
     if len(a[0]) != len(b):
         raise ValueError("Number of columns in A must be equal to the number of rows in B.")
 
-    res = numpy.matmul(a, b).tolist()
+    res = np.matmul(a, b).tolist()
     
     return res
