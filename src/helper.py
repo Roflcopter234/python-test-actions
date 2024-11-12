@@ -5,7 +5,7 @@ def matmul(a, b):
     if len(a[0]) != len(b):
         raise ValueError("Number of columns in A must be equal to the number of rows in B.")
 
-    res = [[0 for x in range(len(a))] for y in range(len(b[0]))]
+    res = [[0 for x in range(len(b[0]))] for y in range(len(a))]
 
     for i in range(len(a)):
         for j in range(len(b[0])):
